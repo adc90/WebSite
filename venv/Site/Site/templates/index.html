@@ -1,22 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}
-adc90 -- Welcome
-{% endblock %}
+{% block title %}adc90 -- {{ title }}{% endblock %}
 
 {% block content %}
-                <article>
-                    <header>
-                        <h1>Welcome</h1>
-                        <p>This is a simple home page</p>
-                    </header>
-                    <section>
-                        <h2>Title: {{ title }}</h2>
-                        <p>Text {{ text }}</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>This is the article footer</p>
-                    </footer>
-                </article>
+    <ul>
+    {% for item in navigation %}
+        <li><a href="{{item.href}}">{{item.caption}}</a></li>
+    {% endfor %} 
+    </ul>
 {% endblock %}
