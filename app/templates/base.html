@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    {% if title %}
+        <title>adc90 - {{ title }}</title>
+    {% else %}
+        <title>adc90</title>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css"> 
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            {% block header %}
+            <div class="navbar">
+                <ul>
+                    <li>Home 1</li>
+                </ul>
+                <ul>
+                    <li>About 1</li>
+                </ul>
+                <ul>
+                    <li>Contact 1</li>
+                </ul>
+            </div>
+            {% endblock %}
+        </div>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">
+            {% block footer %}<h6><a href="#">adc90</a></h6>{% endblock %}
+        </div>
+    </div>
+</body>
+</html>

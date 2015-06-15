@@ -1,0 +1,81 @@
+/*  Author: adc90
+    Title: Base SCSS file
+    Desc: Main style sheet for the page */
+
+$font-stack: Helvectica, sans-serif;
+$primary-color: #333;
+$navbar-color: #444;
+$main-width: 85%;
+
+body 
+{
+    font: 100% $font-stack;
+    color: $primary-color;
+    margin: 0px;
+    margin: 0px;
+}
+
+ul
+{
+    background: $navbar-color; 
+    display: inline-block;
+    margin:0px;
+    padding:0px;
+    li
+    {
+        list-style-type: none;
+        padding:5px;
+        color: white;
+    }
+}
+
+ul li:not(:first-child)
+{
+    display:none;
+}
+
+/* Navigation bar container*/
+.navbar
+{
+    width: 100%;
+    margin: 0px;
+    margin: 0px;
+    background: green;
+}
+
+.container
+{
+    width: $main-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer
+{
+    position: absolute;
+    bottom: 0px;
+    width: $main-width;
+    background: orange;
+}
+
+.post_container
+{
+    border: 1px solid black;
+}
+
+.post_body
+{
+    min-height: 250px;
+}
+
+.post_header
+{
+    border-bottom: 1px solid black;
+}
+
+.post_footer
+{
+    border-top: 1px solid black;
+}
+
+

@@ -6,3 +6,6 @@ venv/lib/
 venv/local/
 venv/pip-selfcheck.json
 
+.sass-cache/
+nenv/
+
